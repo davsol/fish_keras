@@ -10,12 +10,12 @@ import json
 # this function is supposed to read the json files of the fish bounding boxes and to write
 # the images into a new directory
 def create_data():
-    projectPath = "C:\Users\David\Desktop\GitFolder\project1"
-    dataPath = "C:\Users\David\Desktop\Fish"
-    scorePath = os.path.join(dataPath, "train", "binaryScoreMaps")
+    projectPath = "~\Desktop\GIT\FishProject1\keras_fish"
+    dataPath = "~\Desktop\Fishdata"
+    scorePath = os.path.join(dataPath, "binaryScoreMaps")
     
     # extracting the relevant paths for this function
-    trainingDataPath = os.path.join(dataPath, "train", "train")
+    trainingDataPath = os.path.join(dataPath, "train")
     
     # creating path for the score maps that we will create
     if not os.path.exists(scorePath):
